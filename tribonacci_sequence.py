@@ -28,6 +28,7 @@
 # that I really recommend to any math enthusiast and for showing me this
 # mathematical curiosity too with his usual contagious passion :)]
 
+### Old
 def tribonacci_sequence(signature, n):
     if n == 0: return([])
     if n <= 3: return(signature[0:n])
@@ -35,7 +36,7 @@ def tribonacci_sequence(signature, n):
         signature.append(sum(signature[i:i+3]))
     return(signature)
 
-
+### New
 def tribonacci_sequence(signature, n):
     signature = signature[:n]
     for i in range(n-3): signature.append(sum(signature[i:i+3]))
