@@ -23,3 +23,7 @@ def solution(number):
     return(multiples)
 
 print(solution(10))
+
+
+
+print(solution(10))
